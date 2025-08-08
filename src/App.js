@@ -1,19 +1,18 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 
 // Importing components
-import Navbar from './components/Navbar';
-import Sidebar from './components/Sidebar';
+// import Navbar from './components/Navbar';
+// import Sidebar from './components/Sidebar';
+import Dashboard from './components/Dashboard';
 
-// Importing CSS
-import './styles/Navbar.css';
-import './styles/Sidebar.css';
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Sidebar />
+      {/* <Navbar /> */}
+      {/* <Sidebar /> */}
+      <Dashboard />
     </div>
   );
 }

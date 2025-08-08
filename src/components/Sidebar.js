@@ -1,28 +1,21 @@
-import react from "react";
-import '../styles/Sidebar.css';
+import React from "react";
+import './Sidebar.css';
 
 function Sidebar() {
     return (
-        <div class="container">
-            <aside class="sidebar">
-                <h2 class="logo">ResiHub</h2>
-                <ul class="nav">
-                    <li class="active-li"><a href="#home">Overview</a></li>
-                    <li><a href="#profile-section">Profile</a></li>
-                    <li><a href="#notices">Notices</a></li>
-                    <li><a href="#complaint-section">Complaints</a></li>
-                    <li><a href="#">Maintenance</a></li>
-                    <li><a href="../change-pass.html" id="changePasswordBtn">Change Password</a></li>
-                    <li><a href="../logout.php">Logout</a></li>
-                </ul>
-                <div class="user-info">
-                    <img src="../images/user.svg" alt="user" class="user-img" />
-                    <div class="user-details">
-                        <h3>John Doe</h3>
-                        <p>Resident</p>
-                    </div>
-                </div>
-            </aside>
+        <div className="container">
+            <div className="main">
+                <aside className="aside">
+                    <h1>ResiHub</h1>
+                    <ul>
+                        <li className="links">Dashboard Overview</li>
+                        <li className="links">Maintanance</li>
+                        <li className="links">Complaints</li>
+                        <li className="links">Notices</li>
+                        <li className="links">Profile</li>
+                    </ul>
+                </aside>
+            </div>
         </div>
     );
 }
