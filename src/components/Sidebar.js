@@ -13,6 +13,7 @@ function Sidebar() {
                         <li className="links">Complaints</li>
                         <li className="links">Notices</li>
                         <li className="links">Profile</li>
+                        <li className="links">Payments</li>
                     </ul>
                 </aside>
             </div>
