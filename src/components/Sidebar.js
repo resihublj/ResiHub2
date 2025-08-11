@@ -1,23 +1,33 @@
 import React from "react";
-import './Sidebar.css';
+import "./Sidebar.css";
 
-function Sidebar() {
-    return (
-        <div className="container">
-            <div className="main">
-                <aside className="aside">
-                    <h1>ResiHub</h1>
-                    <ul>
-                        <li className="links">Dashboard Overview</li>
-                        <li className="links">Maintanance</li>
-                        <li className="links">Complaints</li>
-                        <li className="links">Notices</li>
-                        <li className="links">Profile</li>
-                    </ul>
-                </aside>
-            </div>
-        </div>
-    );
+export default function Sidebar() {
+  return (
+    <div className="sidebar">
+      <div className="logo">
+        <img
+          src="https://via.placeholder.com/150x50?text=RESTHUB"
+          alt="Logo"
+        />
+      </div>
+      <div className="menu">
+        {[
+          "Dashboard Overview",
+          "Maintenance Management",
+          "Notices Board",
+          "Complaints Handling",
+          "Event & Facility Bookings",
+          "Payments Overview",
+          "Community Polls",
+        ].map((item, i) => (
+          <div
+            key={i}
+            className={`menu-item ${i === 0 ? "active" : ""}`}
+          >
+            {item}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 }
-
-export default Sidebar;

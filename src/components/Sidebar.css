@@ -1,0 +1,40 @@
+.sidebar {
+  width: 240px;
+  background: #fff;
+  padding: 20px 0;
+  border-right: 1px solid #ddd;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.logo {
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.logo img {
+  max-width: 100%;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  padding: 12px 20px;
+  cursor: pointer;
+  color: #333;
+}
+
+.menu-item:hover {
+  background-color: #f0f4ff;
+  color: #2563eb;
+}
+
+.menu-item.active {
+  background-color: #eef4ff;
+  color: #2563eb;
+  font-weight: 600;
+}
