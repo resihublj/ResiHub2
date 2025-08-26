@@ -6,7 +6,7 @@ import "./Layout.css";
 export default function Layout({ children }) {
     return (
         <div className="layout">
-            <Navbar />
+            {/* <Navbar /> */}
             <div className="layout-body">
                 <Sidebar />
                 <main className="layout-content">{children}</main>
